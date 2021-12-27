@@ -1,7 +1,7 @@
 local uiLib = {}
 
 function uiLib.CreateWindow(libName, logoId)
-    local LuxtLib = Instance.new("ScreenGui")
+    local ploitHUB = Instance.new("ScreenGui")
     local shadow = Instance.new("ImageLabel")
     local MainFrame = Instance.new("Frame")
     local sideHeading = Instance.new("Frame")
@@ -12,7 +12,6 @@ function uiLib.CreateWindow(libName, logoId)
     local hubName = Instance.new("TextLabel")
     local tabFrame = Instance.new("ScrollingFrame")
     local UIListLayout = Instance.new("UIListLayout")
-    local usename = Instance.new("TextLabel")
     local MainCorner_3 = Instance.new("UICorner")
     local wave = Instance.new("ImageLabel")
     local MainCorner_4 = Instance.new("UICorner")
@@ -48,10 +47,10 @@ function uiLib.CreateWindow(libName, logoId)
     game:GetService("UserInputService").InputBegan:connect(function(current, ok) 
         if not ok then 
             if current.KeyCode.Name == oldKey then 
-                if LuxtLib.Enabled == true then
-                    LuxtLib.Enabled = false
+                if ploitHUB.Enabled == true then
+                    ploitHUB.Enabled = false
                 else
-                    LuxtLib.Enabled = true
+                    ploitHUB.Enabled = true
                 end
             end
         end
@@ -68,7 +67,7 @@ function uiLib.CreateWindow(libName, logoId)
     keybindInfo1.Size = UDim2.new(0, 50, 0, 22)
     keybindInfo1.ZIndex = 2
     keybindInfo1.Font = Enum.Font.GothamSemibold
-    keybindInfo1.Text = "Close"
+    keybindInfo1.Text = "Toggle Key"
     keybindInfo1.TextColor3 = Color3.fromRGB(255, 255, 255)
     keybindInfo1.TextSize = 13.000
     keybindInfo1.TextXAlignment = Enum.TextXAlignment.Left
@@ -106,13 +105,13 @@ function uiLib.CreateWindow(libName, logoId)
     pageFolder.Parent = framesAll
 
     --
-    libName = libName or "LuxtLib"
+    libName = libName or "ploitHUB"
     logoId = logoId or ""
     --
 
-    LuxtLib.Name = "LuxtLib"..libName
-    LuxtLib.Parent = game.CoreGui
-    LuxtLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+    ploitHUB.Name = "ploitHUB"..libName
+    ploitHUB.Parent = game.CoreGui
+    ploitHUB.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
     MainFrame.Name = "MainFrame"
     MainFrame.Parent = shadow
@@ -153,7 +152,7 @@ function uiLib.CreateWindow(libName, logoId)
     hubName.Parent = sideHeading
     hubName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     hubName.BackgroundTransparency = 1.000
-    hubName.Position = UDim2.new(0.290000081, 0, 0.0299999975, 0)
+    hubName.Position = UDim2.new(0.290000081, 0, 0.0399999975, 0)
     hubName.Size = UDim2.new(0, 110, 0, 16)
     hubName.ZIndex = 2
     hubName.Font = Enum.Font.GothamSemibold
@@ -178,20 +177,6 @@ function uiLib.CreateWindow(libName, logoId)
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     UIListLayout.Padding = UDim.new(0, 5)
 
-    usename.Name = "usename"
-    usename.Parent = sideHeading
-    usename.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    usename.BackgroundTransparency = 1.000
-    usename.Position = UDim2.new(0.290000081, 0, 0.0700000152, 0)
-    usename.Size = UDim2.new(0, 110, 0, 16)
-    usename.ZIndex = 2
-    usename.Font = Enum.Font.GothamSemibold
-    usename.Text = 'HUB'
-    usename.TextColor3 = Color3.fromRGB(103, 172, 161)
-    usename.TextSize = 12.000
-    usename.TextWrapped = true
-    usename.TextXAlignment = Enum.TextXAlignment.Left
-
     MainCorner_3.CornerRadius = UDim.new(0, 5)
     MainCorner_3.Name = "MainCorner"
     MainCorner_3.Parent = MainFrame
@@ -209,15 +194,12 @@ function uiLib.CreateWindow(libName, logoId)
     framesAll.ZIndex = 2
 
     shadow.Name = "shadow"
-    shadow.Parent = LuxtLib
+    shadow.Parent = ploitHUB
     shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     shadow.BackgroundTransparency = 1.000
     shadow.Position = UDim2.new(0.319562584, 0, 0.168689325, 0)
     shadow.Size = UDim2.new(0, 609, 0, 530)
     shadow.ZIndex = 0
-    shadow.Image = "http://www.roblox.com/asset/?id=6105530152"
-    shadow.ImageColor3 = Color3.fromRGB(0, 0, 0)
-    shadow.ImageTransparency = 0.200
 
     local TabHandling = {}
 
@@ -305,12 +287,12 @@ function uiLib.CreateWindow(libName, logoId)
                     for i,v in next, v:GetChildren() do
                         if v:IsA("TextButton") then
                             game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-                                TextColor3 = Color3.fromRGB(35, 59, 55)
+                                TextColor3 = Color3.fromRGB(86, 54, 92)
                             }):Play()
                         end
                         if v:IsA("ImageLabel") then
                             game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-                                ImageColor3 = Color3.fromRGB(35, 59, 55)
+                                ImageColor3 = Color3.fromRGB(86, 54, 92)
                             }):Play()
                         end
                     end
