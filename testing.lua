@@ -12,7 +12,6 @@ function uiLib.CreateWindow(libName, logoId)
     local hubName = Instance.new("TextLabel")
     local tabFrame = Instance.new("ScrollingFrame")
     local UIListLayout = Instance.new("UIListLayout")
-    local usename = Instance.new("TextLabel")
     local MainCorner_3 = Instance.new("UICorner")
     local wave = Instance.new("ImageLabel")
     local MainCorner_4 = Instance.new("UICorner")
@@ -153,7 +152,7 @@ function uiLib.CreateWindow(libName, logoId)
     hubName.Parent = sideHeading
     hubName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     hubName.BackgroundTransparency = 1.000
-    hubName.Position = UDim2.new(0.290000081, 0, 0.0299999975, 0)
+    hubName.Position = UDim2.new(0.290000081, 0, 0.0399999975, 0)
     hubName.Size = UDim2.new(0, 110, 0, 16)
     hubName.ZIndex = 2
     hubName.Font = Enum.Font.GothamSemibold
@@ -177,20 +176,6 @@ function uiLib.CreateWindow(libName, logoId)
     UIListLayout.Parent = tabFrame
     UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
     UIListLayout.Padding = UDim.new(0, 5)
-
-    usename.Name = "usename"
-    usename.Parent = sideHeading
-    usename.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    usename.BackgroundTransparency = 1.000
-    usename.Position = UDim2.new(0.290000081, 0, 0.0700000152, 0)
-    usename.Size = UDim2.new(0, 110, 0, 16)
-    usename.ZIndex = 2
-    usename.Font = Enum.Font.GothamSemibold
-    usename.Text = 'HUB'
-    usename.TextColor3 = Color3.fromRGB(199, 127, 212)
-    usename.TextSize = 12.000
-    usename.TextWrapped = true
-    usename.TextXAlignment = Enum.TextXAlignment.Left
 
     MainCorner_3.CornerRadius = UDim.new(0, 5)
     MainCorner_3.Name = "MainCorner"
