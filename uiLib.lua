@@ -186,7 +186,7 @@ function uiLib.CreateWindow(libName, logoId)
     usename.Size = UDim2.new(0, 110, 0, 16)
     usename.ZIndex = 2
     usename.Font = Enum.Font.GothamSemibold
-    usename.Text = game.Players.LocalPlayer.Name
+    usename.Text = 'HUB'
     usename.TextColor3 = Color3.fromRGB(103, 172, 161)
     usename.TextSize = 12.000
     usename.TextWrapped = true
@@ -196,20 +196,8 @@ function uiLib.CreateWindow(libName, logoId)
     MainCorner_3.Name = "MainCorner"
     MainCorner_3.Parent = MainFrame
 
-    wave.Name = "wave"
-    wave.Parent = MainFrame
-    wave.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-    wave.BackgroundTransparency = 1.000
-    wave.Position = UDim2.new(0.0213434305, 0, 0, 0)
-    wave.Size = UDim2.new(0.97865659, 0, 0.557522118, 0)
-    wave.Image = "http://www.roblox.com/asset/?id=6087537285"
-    wave.ImageColor3 = Color3.fromRGB(181, 249, 255)
-    wave.ImageTransparency = 0.300
-    wave.ScaleType = Enum.ScaleType.Slice
-
     MainCorner_4.CornerRadius = UDim.new(0, 3)
     MainCorner_4.Name = "MainCorner"
-    MainCorner_4.Parent = wave
 
     framesAll.Name = "framesAll"
     framesAll.Parent = MainFrame
