@@ -67,7 +67,7 @@ function uiLib.CreateWindow(libName, logoId)
     keybindInfo1.Size = UDim2.new(0, 50, 0, 22)
     keybindInfo1.ZIndex = 2
     keybindInfo1.Font = Enum.Font.GothamSemibold
-    keybindInfo1.Text = "Toggle Key"
+    keybindInfo1.Text = "Toggle"
     keybindInfo1.TextColor3 = Color3.fromRGB(255, 255, 255)
     keybindInfo1.TextSize = 13.000
     keybindInfo1.TextXAlignment = Enum.TextXAlignment.Left
