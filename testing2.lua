@@ -68,7 +68,7 @@ function uiLib.CreateWindow(libName, logoId)
     keybindInfo1.Size = UDim2.new(0, 50, 0, 22)
     keybindInfo1.ZIndex = 2
     keybindInfo1.Font = Enum.Font.GothamSemibold
-    keybindInfo1.Text = "Close"
+    keybindInfo1.Text = "Toggle Key"
     keybindInfo1.TextColor3 = Color3.fromRGB(255, 255, 255)
     keybindInfo1.TextSize = 13.000
     keybindInfo1.TextXAlignment = Enum.TextXAlignment.Left
@@ -187,7 +187,7 @@ function uiLib.CreateWindow(libName, logoId)
     usename.ZIndex = 2
     usename.Font = Enum.Font.GothamSemibold
     usename.Text = 'HUB'
-    usename.TextColor3 = Color3.fromRGB(103, 172, 161)
+    usename.TextColor3 = Color3.fromRGB(199, 127, 212)
     usename.TextSize = 12.000
     usename.TextWrapped = true
     usename.TextXAlignment = Enum.TextXAlignment.Left
@@ -305,12 +305,12 @@ function uiLib.CreateWindow(libName, logoId)
                     for i,v in next, v:GetChildren() do
                         if v:IsA("TextButton") then
                             game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-                                TextColor3 = Color3.fromRGB(35, 59, 55)
+                                TextColor3 = Color3.fromRGB(86, 54, 92)
                             }):Play()
                         end
                         if v:IsA("ImageLabel") then
                             game.TweenService:Create(v, TweenInfo.new(0.18, Enum.EasingStyle.Quint, Enum.EasingDirection.In), {
-                                ImageColor3 = Color3.fromRGB(35, 59, 55)
+                                ImageColor3 = Color3.fromRGB(86, 54, 92)
                             }):Play()
                         end
                     end
