@@ -1,6 +1,6 @@
 local isExistance = false
 
-local Notifyt = Instance.new("ScreenGui")
+local ploitNotify = Instance.new("ScreenGui")
 local NotificationParent = Instance.new("ScrollingFrame")
 local UIListLayout = Instance.new("UIListLayout")
 local UIPadding = Instance.new("UIPadding")
@@ -18,20 +18,20 @@ local Content = Instance.new("TextLabel")
 local UIPadding_2 = Instance.new("UIPadding")
 local UISizeConstraint = Instance.new("UISizeConstraint")
 
-if game.CoreGui:FindFirstChild("Notifyt") then
+if game.CoreGui:FindFirstChild("ploitNotify") then
 	isExistance = true
-	Notifyt = game.CoreGui.Notifyt
-	NotificationParent = Notifyt.NotificationParent
-	Notification = Notifyt.Notification
+	ploitNotify = game.CoreGui.ploitNotify
+	NotificationParent = ploitNotify.NotificationParent
+	Notification = ploitNotify.Notification
 end
 
-Notifyt.Name = "Notifyt"
-Notifyt.Parent = game.CoreGui
-Notifyt.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-Notifyt.ResetOnSpawn = false
+ploitNotify.Name = "ploitNotify"
+ploitNotify.Parent = game.CoreGui
+ploitNotify.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ploitNotify.ResetOnSpawn = false
 
 NotificationParent.Name = "NotificationParent"
-NotificationParent.Parent = Notifyt
+NotificationParent.Parent = ploitNotify
 NotificationParent.AnchorPoint = Vector2.new(1, 0)
 NotificationParent.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 NotificationParent.BackgroundTransparency = 1.000
@@ -54,7 +54,7 @@ UIPadding.Parent = NotificationParent
 UIPadding.PaddingRight = UDim.new(0, 25)
 
 Notification.Name = "Notification"
-Notification.Parent = Notifyt
+Notification.Parent = ploitNotify
 Notification.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Notification.BackgroundTransparency = 1.000
 Notification.BorderSizePixel = 0
