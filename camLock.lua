@@ -1,10 +1,3 @@
-local uiLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/VizeModz/ploitHUB/main/uiLib.lua"))()
-local Notify = notifyLib.init
-
-Notify('Aimbot', 'Toggle ESP: V', 2.5)
-Notify('Aimbot', 'Aim-Key/Lock-Camera:  LeftAlt', 2.5)
-Notify('Aimbot', 'Default Mode:  FFA', 2.5)
-
 ENABLED      = false
 PLAYER  = game.Players.LocalPlayer
 MOUSE   = PLAYER:GetMouse()
